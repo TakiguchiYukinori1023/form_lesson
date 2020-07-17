@@ -1,1 +1,97 @@
 @charset "utf-8";
+
+.wrapper {
+  padding: 32px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.button {
+  box-sizing: border-box;
+  padding: 13px;
+  font-size: 13px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.form-title {
+  text-align: center;
+  color: #545658;
+  font-size: 24px;
+}
+
+.columns {
+  display: flex;
+  margin-top: 24px;
+}
+
+.is-halfwidth {
+  width: 50%;
+}
+
+.is-halfwidth:last-child {
+  margin-left: 8px;
+}
+
+.is-facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+.is-fullwidth {
+  width: 100%;
+}
+
+.is-google {
+  color: red;
+  background-color: #fff;
+}
+
+.supplement-text {
+  text-align: center;
+}
+
+.is-defaultText {
+  color: #949697;
+  font-size: 12px;
+}
+
+.top-margin {
+  margin-top: 8px;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.divider__text {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 10px;
+}

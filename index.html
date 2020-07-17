@@ -10,6 +10,57 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+   <section class="wrapper">
+     <div class="inner">
+      <div class="main-content">
+        <h1 class="form-title">アカウント作成</h1>
+        <div class="columns">
+          <div class="is-halfwidth">
+            <a href="" class="button is-fullwidth is-facebook">Facebookでスタート</a> 
+          </div>
+          <div class="is-halfwidth">
+            <a href="" class="button is-fullwidth is-google">Googleでスタート</a>
+          </div>
+        </div>
+        <p class="supplement-text is-defaultText top-margin">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません</p>
+        <div class="divider">
+          <p class="is-defaultText divider__text">アカウント情報</p>
+        </div>
+        <form>
+          <div class="item">
+            <p class="item__name">名字</p>
+            <input type="text" name="firstname">
+          </div>
+          <div class="item">
+            <p class="item__name">名前</p>
+            <input type="text" name="lastname">
+          </div>
+          <div class="item">
+            <p class="item__name">性別</p>
+            <input id="male" type="radio" name="sex" value="male"><label for="male">男性</label>
+            <input id="female" type="radio" name="sex" value="female"><label for="female">女性</label>
+            <input id="other" type="radio" name="sex" value="other"><label for="other">その他</label>
+          </div>
+          <div class="item">
+            <p class="item__name">出身</p>
+            <select name="prefecture">
+              <option value="tokyo">東京</opion>
+                <option value="tiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
+              </select>
+            </div>
+            <div class="item">
+              <p class="item__name">Eメール</p>
+              <input id="mail" type="email" name="mail" placeholder="ex)hoge@example.com">
+            </div>
+            <div class="item">
+              <p class="item__name">電話番号</p>
+              <input id="tel" type="tel" name="tel" value="">
+            </div>    
+          </form>
+        </div>
+        </div>
+      </section>
   </body>
 </html>
