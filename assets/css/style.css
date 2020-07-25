@@ -11,20 +11,36 @@
   width: 640px;
 }
 
+.input-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
 .button {
   box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
   padding: 13px;
   font-size: 13px;
-  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
-  text-align: center;
 }
 
 .main-content {
   padding: 48px 64px;
   background-color: #fff;
   border-radius: 4px;
+  margin-bottom: 32px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
 }
 
 .form-title {
@@ -52,6 +68,12 @@
   background-color: #3b5999;
   border-color: #3b5999;
 }
+
+.is-facebook:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
 .is-fullWidth {
   width: 100%;
 }
@@ -59,6 +81,10 @@
 .is-google {
   color: red;
   background-color: #fff;
+}
+
+.is-google:hover {
+  background-color: #f7f7f7;
 }
 
 .supplement-text {
@@ -125,15 +151,10 @@
   border-radius: 3px;
 }
 
-.input-init {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  background:transparent;
-  border: none;
-  outline: none;
-  resize: none;
+.input-area:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
 
 .name {
@@ -144,14 +165,15 @@
   margin-left: 0;
 }
 
-.gender-contens {
+.gender-contents {
   display: flex;
   color: #545658;
   font-size: 16px;
 }
 
 .gender-content {
-  margin-left: 16px;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 .gender-content:first-child {
@@ -164,7 +186,7 @@
   padding: 3px 3px 3px 20px;
 }
 
-.radioButton:before  {
+.gender-content span:before  {
   content: "";
   position: absolute;
   left: 0;
@@ -178,7 +200,7 @@
 }
 
 .gender-input:checked +
-.radioButton:after {
+span:after {
   content: "";
   position: absolute;
   left: 4px;
@@ -190,7 +212,8 @@
   background-color: #01bfbd;
 }
 
-.gender-input {
+.gender-content input,
+.course input {
   display: none;
 }
 
@@ -214,10 +237,6 @@
   margin-bottom: 10px;
   color: #545658;
   font-size: 16px;
-}
-
-.course input {
-  display: none;
 }
 
 .course-option-text {
@@ -248,4 +267,51 @@
   margin-top: -12px;
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
+}
+
+.remarks .input-area {
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.link-color {
+  color: #01a6a4;
+}
+
+.link-color:hover {
+  color: #01bfbd;
+}
+
+.foot-part {
+  text-align: center;
+}
+
+.resend-mail {
+  display: inline-block;
+}
+
+.foot-part p,
+.resend-mail {
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.foot-part a:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
