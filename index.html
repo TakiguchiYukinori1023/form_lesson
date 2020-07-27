@@ -26,7 +26,7 @@
           <div class="divider">
             <p class="is-defaultText divider__text">アカウント情報</p>
           </div>
-          <form class="form-content" action="#" method="POST">
+          <form action="#" method="POST">
             <!--名前-->
             <div class="row name-box">
               <div class="name is-halfWidth">
@@ -43,7 +43,7 @@
               </div>
             </div>
             <!--性別-->
-            <div class="row gender">
+            <div class="row">
               <p class="label-text">性別</p>
               <!--縦並び or 横並び-->
               <div class="gender-contents">
@@ -62,10 +62,10 @@
               </div>
             </div>
             <!--出身-->
-            <div class="row origin is-halfWidth">
+            <div class="row is-halfWidth">
               <p class="label-text">出身</p>
               <div class="select-area">
-                <select name="origin" id="origin" class="input-init input-area origin-input">
+                <select name="origin" id="origin" class="input-init input-area">
                   <option value="東京">東京</option>
                   <option value="千葉">千葉</option>
                   <option value="埼玉">埼玉</option>
@@ -74,25 +74,25 @@
               </div>
             </div>
             <!--Eメール-->
-            <div class="row email">
+            <div class="row">
               <p class="label-text">Eメール
                 <span class="alert">※</span>
               </p>
               <input type="email" class="input-init input-area is-fullWidth" name="email" placeholder="ex) hoge@example.com" required>
             </div>
             <!--電話番号-->
-            <div class="row tel">
+            <div class="row">
               <p class="label-text">電話番号</p>
               <input type="tel" class="input-init input-area is-fullWidth" name="tel" placeholder="ex) 09012345678">
             </div>
             <!--パスワード-->
-            <div class="row password">
+            <div class="row">
               <p class="label-text">パスワード
                 <span class="alert">※</span>
               </p>
               <input type="password" class="input-init input-area is-fullWidth" name="password" required>
             </div>
-            <div class="row password">
+            <div class="row">
               <p class="label-text">パスワード(確認用)
                 <span class="alert">※</span>
               </p>
@@ -124,12 +124,12 @@
               <input type="submit" value="アカウント作成" class="input-init button submit-btn is-fullWidth">
             </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
-          </div>
-        </form>
-            <div class="foot-part">
-              <p>すでにアカウントをお持ちですか？<a class="link-color" href> ログイン</a></p>
-              <a class="link-color resend-mail" href>認証メールが届きませんか？</a>
+          </form>
         </div>
+          <div class="foot-part">
+            <p>すでにアカウントをお持ちですか？<a class="link-color" href> ログイン</a></p>
+            <a class="link-color resend-mail" href>認証メールが届きませんか？</a>
+          </div>
       </div>
     </section>
   </body>
