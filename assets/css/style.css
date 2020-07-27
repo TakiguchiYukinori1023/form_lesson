@@ -283,6 +283,12 @@ span:after {
   background-color: #01a6a4;
 }
 
+.submit-btn:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+}
+
 .agreement {
   font-size: 12px;
   line-height: 16px;
